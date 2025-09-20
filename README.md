@@ -40,34 +40,34 @@ A comprehensive domain-specific AI intake agent built with OpenMic API for medic
 ## Quick Start
 
 ### 1. Clone and Install
-\`\`\`bash
+```bash
 git clone <repository-url>
 cd medical-ai-intake
 npm install
-\`\`\`
+```
 
 ### 2. Environment Setup
 The application uses Supabase integration with pre-configured environment variables.
 
 ### 3. Database Setup
 Run the database scripts to create tables and seed data:
-\`\`\`bash
+```bash
 # Tables and sample data are automatically created via Supabase integration
-\`\`\`
+```
 
 ### 4. Start Development Server
-\`\`\`bash
+```bash
 npm run dev
-\`\`\`
+```
 
 ### 5. Setup Ngrok (for webhook testing)
-\`\`\`bash
+```bash
 # Install ngrok
 brew install ngrok/ngrok/ngrok
 
 # Start ngrok tunnel
 ngrok http 3000
-\`\`\`
+```
 
 ### 6. Configure OpenMic
 1. Sign up at [OpenMic](https://chat.openmic.ai/signup)
@@ -230,7 +230,3 @@ For production deployment:
 3. Make your changes
 4. Test thoroughly with OpenMic integration
 5. Submit a pull request
-
-## License
-
-This project is licensed under the MIT License.
