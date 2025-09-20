@@ -9,19 +9,21 @@ A comprehensive domain-specific AI intake agent built with OpenMic API for medic
 ## 📸 Screenshots
 
 <!-- Add screenshots here -->
-![Dashboard Overview](./screenshots/dashboard.png)
+![Dashboard Overview](https://github.com/user-attachments/assets/db914cac-b3bb-4972-b35e-a79d896e99c7)
 *Main dashboard showing bot management and key metrics*
 
-![Bot Management](./screenshots/bot-management.png)
+![Bot Management](https://github.com/user-attachments/assets/f1200dc3-5515-4435-afda-ca8034a926c0)
+![Bot Management](https://github.com/user-attachments/assets/46e60bed-25d7-4d86-8844-5b8bb1a5d1aa)
 *Create and manage OpenMic bots with medical domain configuration*
 
-![Patient Management](./screenshots/patient-management.png)
+![Patient Management](https://github.com/user-attachments/assets/f3386db6-1780-4ee8-b96e-2556ac3a0f83)
 *Comprehensive patient records with medical history and allergies*
 
-![Call Logs Dashboard](./screenshots/call-logs.png)
+![Call Logs Dashboard](https://github.com/user-attachments/assets/313a9da8-bccd-4c46-a070-ea9faa961144)
 *Detailed call analytics with transcripts and function call results*
 
-![OpenMic Sync](./screenshots/openmic-sync.png)
+![OpenMic Sync](https://github.com/user-attachments/assets/eb45420f-b02c-4d2e-8491-5495bdd30994)
+![OpenMic Sync](https://github.com/user-attachments/assets/fc543cba-0690-4074-9fee-db9bfde1b2c8)
 *Seamless integration with OpenMic API for webhook configuration*
 
 ## Features
