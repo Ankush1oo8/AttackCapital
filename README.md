@@ -2,6 +2,28 @@
 
 A comprehensive domain-specific AI intake agent built with OpenMic API for medical facilities. This application demonstrates pre-call, in-call function calls, and post-call webhook integrations for dynamic patient data retrieval and call handling.
 
+## 🚀 Live Demo
+
+**Deployed Application**: [https://attack-capital-three.vercel.app](https://attack-capital-three.vercel.app)
+
+## 📸 Screenshots
+
+<!-- Add screenshots here -->
+![Dashboard Overview](./screenshots/dashboard.png)
+*Main dashboard showing bot management and key metrics*
+
+![Bot Management](./screenshots/bot-management.png)
+*Create and manage OpenMic bots with medical domain configuration*
+
+![Patient Management](./screenshots/patient-management.png)
+*Comprehensive patient records with medical history and allergies*
+
+![Call Logs Dashboard](./screenshots/call-logs.png)
+*Detailed call analytics with transcripts and function call results*
+
+![OpenMic Sync](./screenshots/openmic-sync.png)
+*Seamless integration with OpenMic API for webhook configuration*
+
 ## Features
 
 ### 🏥 Medical Domain Specific
@@ -47,7 +69,12 @@ npm install
 ```
 
 ### 2. Environment Setup
-The application uses Supabase integration with pre-configured environment variables.
+Create a `.env.local` file with your OpenMic API key:
+```env
+OPENMIC_API_KEY=your_openmic_api_key_here
+```
+
+The application also uses Supabase integration with pre-configured environment variables.
 
 ### 3. Database Setup
 Run the database scripts to create tables and seed data:
@@ -155,13 +182,13 @@ ngrok http 3000
 - Logs pre-call data for analysis
 
 ### In-call Function: get_patient_info
-\`\`\`json
+```json
 {
   "medical_id": "MED001"
 }
-\`\`\`
+```
 Returns:
-\`\`\`json
+```json
 {
   "success": true,
   "patient": {
@@ -172,7 +199,7 @@ Returns:
   },
   "message": "Hello John! I found your information. How can I help you today?"
 }
-\`\`\`
+```
 
 ### Post-call Processing
 - Extracts urgency levels (low, medium, high)
@@ -216,11 +243,13 @@ The application includes comprehensive logging with `[v0]` prefixes for easy ide
 
 ## Deployment
 
-For production deployment:
+This application is deployed on Vercel at [https://attack-capital-three.vercel.app](https://attack-capital-three.vercel.app).
+
+For your own deployment:
 
 1. **Deploy to Vercel**: The application is optimized for Vercel deployment
-2. **Configure Environment**: Ensure all Supabase environment variables are set
-3. **Update Webhooks**: Replace ngrok URLs with production URLs in OpenMic
+2. **Configure Environment**: Set `OPENMIC_API_KEY` and ensure all Supabase environment variables are configured
+3. **Update Webhooks**: Replace development URLs with production URLs in OpenMic dashboard
 4. **SSL Certificate**: Ensure HTTPS for webhook security
 
 ## Contributing
@@ -230,3 +259,7 @@ For production deployment:
 3. Make your changes
 4. Test thoroughly with OpenMic integration
 5. Submit a pull request
+
+## License
+
+This project is licensed under the MIT License.
